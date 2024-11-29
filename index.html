@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recurring Date Picker</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="date-picker-container">
+    <h2>Select a Date</h2>
+    <input type="date" id="startDate" />
+
+    <h3>Select Recurrence</h3>
+    <select id="recurrenceType">
+      <option value="none">None</option>
+      <option value="daily">Daily</option>
+      <option value="weekly">Weekly</option>
+      <option value="monthly">Monthly</option>
+    </select>
+
+    <button onclick="generateRecurringDates()">Generate Recurring Dates</button>
+
+    <h3>Recurring Dates:</h3>
+    <ul id="recurringDatesList"></ul>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
